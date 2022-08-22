@@ -1979,7 +1979,7 @@ input, select, textarea {
 /* Features */
 
 	.features {
-		display: -moz-flex;
+		/* display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
@@ -1989,11 +1989,33 @@ input, select, textarea {
 		flex-wrap: wrap;
 		border-radius: 0.25em;
 		border: solid 1px rgba(255, 255, 255, 0.15);
-		background: rgba(255, 255, 255, 0.05);
+		background: rgba(255, 255, 255, 0.05); */
 		margin: 0 0 2em 0;
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:center;
+		gap:5px;
 	}
 
-		.features section {
+
+
+	.features section{
+		height:150px;
+		width:150px;
+		/* border: solid 1px rgba(255, 255, 255, 0.15); */
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+		gap:5px;
+	}
+
+	.features section img{
+height:100px;
+
+	}
+
+		/* .features section {
 			padding: 3.5em 3em 1em 7em ;
 			width: 50%;
 			border-top: solid 1px rgba(255, 255, 255, 0.15);
@@ -2218,7 +2240,7 @@ input, select, textarea {
 					top: 0;
 				}
 
-		}
+		} */
 
 /* Form */
 
@@ -3240,7 +3262,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: #009a9a;
 		}
 
 		.wrapper.style1-alt {
@@ -3248,7 +3270,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: #5e42a6;
 		}
 
 		.wrapper.style2-alt {
@@ -3256,7 +3278,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color:#363737;
 		}
 
 		.wrapper.style3-alt {
@@ -3524,7 +3546,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: #015d67;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3906,4 +3928,10 @@ input, select, textarea {
 				background-attachment: scroll;
 			}
 
+		}
+
+
+		.profile-image{
+			width:300px;
+			border-radius:50%;
 		}
